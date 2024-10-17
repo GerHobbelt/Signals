@@ -71,7 +71,7 @@ void Global( void )
 }
 
 
-int main()
+int main(void)
 {
 	Label l;
 	Label2 l2;

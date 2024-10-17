@@ -56,7 +56,7 @@ See Example.cpp for more detailed examples. Here is a very simple one:
 		}
 	};
 
-	int main()
+	int main(void)
 	{
 		Delegate1< int > delegate;
 		delegate.Bind( & MyFunc );
