@@ -33,6 +33,9 @@ public:
 class Label
 {
 public:
+	// fix warning C5204: 'Label': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly.
+	virtual ~Label() = default;
+
 	virtual void Update0( void ) const
 	{
 		printf( "Update0( void ) \n" );
