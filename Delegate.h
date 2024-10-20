@@ -329,7 +329,7 @@ struct SimplifyMemFunc<SINGLE_MEMFUNCPTR_SIZE>	{
 	inline static GenericClass *Convert(X *pthis, XFuncType function_to_bind,
 			GenericMemFuncType &bound_func) {
 #if defined __DMC__
-		// Digital Mars doesn't allow you to cast between abitrary PMF's,
+		// Digital Mars doesn't allow you to cast between arbitrary PMF's,
 		// even though the standard says you can. The 32-bit compiler lets you
 		// static_cast through an int, but the DOS compiler doesn't.
 		bound_func = horrible_cast<GenericMemFuncType>(function_to_bind);
